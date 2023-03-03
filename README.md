@@ -150,7 +150,7 @@ Para estas pruebas se puede ejecutar el API desde CMD o Visual Studio 2022, solo
 ![Base de Datos](Imagenes_readme/puertosPostman.JPG)
 11. Si el puerto es diferente al que se tiene configurado en el Postman solo es necesario cambiarlo en cada uno de los métodos por el puerto activo que se muestra en CMD o Visual Studio.
 ![Base de Datos](Imagenes_readme/puertosPostman2.JPG)
-12. Listo, una vez modificado el puerto ya se puede ejecutar el metodo.
+12. Listo, una vez modificado el puerto ya se puede ejecutar cada uno de los métodos.
 ![Base de Datos](Imagenes_readme/postmanEjemplo.JPG)
 
 ### Pruebas con Swagger
@@ -163,3 +163,6 @@ Para las pruebas desde Swagger es necesario ejecutar la API desde Visual Studio 
 6. Dar clic en Botón Execute y esto enviara la peticion al API.
     ![Base de Datos](Imagenes_readme/swagger1.JPG)
 7. Listo, asi es como se puede ejecutar cada uno de los métodos.
+
+## Agradecimientos
+Gracias Rey Mago por confiar en nuestros conocimientos para desarrollar este proyecto. Esperamos que el proyecto entregado sea de tu agrado y cumpla con lo requerimientos solicitados.
