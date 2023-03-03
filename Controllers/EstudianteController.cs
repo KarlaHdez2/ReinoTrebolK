@@ -150,17 +150,25 @@ namespace ReinoTrebolK.Controllers
                 Estudiante existeEstu = reglas.existEstudiante(Soli.IdEstu);
                 if (existeEstu != null)
                 {
-                    var entityS = new Solicitud()
+                    ActSolicitud existeSol = reglas.validarEstatus(Soli.IdEstu);
+                    if (existeSol == null)
                     {
-                        IdEstu = Soli.IdEstu,
-                        IdMagia = Soli.IdMagia,
-                        Estatus = reglas.validaDatos(existeEstu) ? 3 : 2
-                    };
+                        var entityS = new Solicitud()
+                        {
+                            IdEstu = Soli.IdEstu,
+                            IdMagia = Soli.IdMagia,
+                            Estatus = reglas.validaDatos(existeEstu) ? 3 : 2
+                        };
 
-                    DBContext.Solicituds.Add(entityS);
-                    await DBContext.SaveChangesAsync();
-
-                    return MensajeResp.estudianteExiste(Soli.IdEstu);
+                        DBContext.Solicituds.Add(entityS);
+                        await DBContext.SaveChangesAsync();
+                        
+                        return MensajeResp.estudianteExiste(Soli.IdEstu);
+                    }
+                    else
+                    {
+                        return MensajeResp.solsiExiste(Soli.IdEstu);
+                    }
                 }
                 else
                 {

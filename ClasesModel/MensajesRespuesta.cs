@@ -106,7 +106,7 @@ namespace ReinoTrebolK.ClasesModel
             var mensaje = new MensajeRespuesta()
             {
                 Code = HttpStatusCode.OK,
-                Descripcion = "La solicitud del estudiante con IDE" + ide + " YA EXISTE, si requiere modificarla ir a la opcion Actualizar solicitud"
+                Descripcion = "La solicitud del estudiante con IDE: " + ide + " YA EXISTE, si requiere modificarla ir a la opcion Actualizar solicitud"
             };
             return mensaje;
 
@@ -146,7 +146,7 @@ namespace ReinoTrebolK.ClasesModel
             var mensaje = new MensajeRespuesta()
             {
                 Code = HttpStatusCode.OK,
-                Descripcion = "No se puede modificar el estatus de la solicitud del estudiante con IDE " + ide + " porque anteriormente ya fue RECHAZADA"
+                Descripcion = "No se puede modificar el estatus de la solicitud del estudiante con IDE " + ide + " porque anteriormente YA fue RECHAZADA"
             };
             return mensaje;
 
