@@ -1,0 +1,499 @@
+{
+	"info": {
+		"_postman_id": "14465152-0b12-470f-99f9-194189c0fc45",
+		"name": "ReinoTrebol IA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "obtenerSolicitudes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7080/api/Estudiante/obtenerSolicitudes",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7080",
+					"path": [
+						"api",
+						"Estudiante",
+						"obtenerSolicitudes"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "obtenerSolicitudes",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7080/api/Estudiante/obtenerSolicitudes",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7080",
+							"path": [
+								"api",
+								"Estudiante",
+								"obtenerSolicitudes"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "[\n    {\n        \"ide\": \"123KARLA\",\n        \"nombreCompleto\": \"Karlis Hernandez\",\n        \"edad\": 25,\n        \"magia\": \"Oscuridad\",\n        \"estatus\": \"Pendiente\"\n    },\n    {\n        \"ide\": \"123KARLA\",\n        \"nombreCompleto\": \"Karlis Hernandez\",\n        \"edad\": 25,\n        \"magia\": \"Viento\",\n        \"estatus\": \"Pendiente\"\n    },\n    {\n        \"ide\": \"PRUEBA123\",\n        \"nombreCompleto\": \"Prueba PruebaApellido\",\n        \"edad\": 32,\n        \"magia\": \"Agua\",\n        \"estatus\": \"Pendiente\"\n    },\n    {\n        \"ide\": \"PRUEBA1234\",\n        \"nombreCompleto\": \"Prueba2 PruebaApellido\",\n        \"edad\": 32,\n        \"magia\": \"Agua\",\n        \"estatus\": \"Rechazado\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "insertarSolicitud",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ide\": \"PRUEBA1234\",\r\n  \"nombre\": \"Prueba2\",\r\n  \"apellido\": \"PruebaApellido\",\r\n  \"edad\": 32,\r\n  \"idMagia\": 4\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7080/api/Estudiante/insertarSolicitud",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7080",
+					"path": [
+						"api",
+						"Estudiante",
+						"insertarSolicitud"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "insertarSolicitud",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ide\": \"PRUEBA123\",\r\n  \"nombre\": \"Prueba\",\r\n  \"apellido\": \"PruebaApellido\",\r\n  \"edad\": 32,\r\n  \"idMagia\": 4\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7080/api/Estudiante/insertarSolicitud",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7080",
+							"path": [
+								"api",
+								"Estudiante",
+								"insertarSolicitud"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"descripcion\": \"El estudiante con IDE PRUEBA1234 Se registro con EXITO\",\n    \"error\": null,\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "obtenerAsignaciones",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7080/api/Estudiante/obtenerAsignaciones",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7080",
+					"path": [
+						"api",
+						"Estudiante",
+						"obtenerAsignaciones"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "obtenerAsignaciones",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7080/api/Estudiante/obtenerAsignaciones",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7080",
+							"path": [
+								"api",
+								"Estudiante",
+								"obtenerAsignaciones"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 05:11:22 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"ide\": \"123KARLA\",\n        \"nombreCompleto\": \"Karlita Hernandez\",\n        \"edad\": 26,\n        \"grimorio\": \"Amor\",\n        \"portada\": \"Trebol 3 hoja\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "insertarSoloSolicitud",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idEstu\": \"123KARLA\",\r\n  \"idMagia\": 5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7080/api/Estudiante/insertarSolicitud2",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7080",
+					"path": [
+						"api",
+						"Estudiante",
+						"insertarSolicitud2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "insertarSoloSolicitud",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"idEstu\": \"123KARLA\",\r\n  \"idMagia\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7080/api/Estudiante/insertarSolicitud2",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7080",
+							"path": [
+								"api",
+								"Estudiante",
+								"insertarSolicitud2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 05:17:20 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"descripcion\": \"La solicitud del estudiante con IDE123KARLA YA EXISTE, si requiere modificarla ir a la opcion Actualizar solicitud\",\n    \"error\": null,\n    \"data\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "actualizarSolicitud",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ide\": \"123KARLA\",\r\n  \"nombre\": \"Karlis\",\r\n  \"apellido\": \"Hernandez\",\r\n  \"edad\": 25,\r\n  \"idMagia\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7080/api/Estudiante/ActualizarSolicitud",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7080",
+					"path": [
+						"api",
+						"Estudiante",
+						"ActualizarSolicitud"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "actualizarSolicitud",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ide\": \"123KARLA\",\r\n  \"nombre\": \"Karlis\",\r\n  \"apellido\": \"Hernandez\",\r\n  \"edad\": 25,\r\n  \"idMagia\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7080/api/Estudiante/ActualizarSolicitud",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7080",
+							"path": [
+								"api",
+								"Estudiante",
+								"ActualizarSolicitud"
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n    \"code\": 200,\r\n    \"descripcion\": \"El estudiante con IDE 123KARLA Se actualizo con EXITO\",\r\n    \"error\": null,\r\n    \"data\": null\r\n}"
+				}
+			]
+		},
+		{
+			"name": "actualizarEstatusSoli",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ide\": \"123KARLA\",\r\n  \"estatus\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7080/api/Estudiante/ActualizarEstatusSol",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7080",
+					"path": [
+						"api",
+						"Estudiante",
+						"ActualizarEstatusSol"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "actualizarEstatusSoli",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"ide\": \"123KARLA\",\r\n  \"estatus\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7080/api/Estudiante/ActualizarEstatusSol",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7080",
+							"path": [
+								"api",
+								"Estudiante",
+								"ActualizarEstatusSol"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 05:21:49 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"descripcion\": \"El estudiante con IDE 123KARLA se le asigno Grimorio\",\n    \"error\": null,\n    \"data\": {\n        \"idGrimorio\": 1,\n        \"descripcion\": \"Sinceridad\",\n        \"tipoTrebol\": 1\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "eliminarSoli",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7080/api/Estudiante/DeleteSolicitud/PRUEBA123",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7080",
+					"path": [
+						"api",
+						"Estudiante",
+						"DeleteSolicitud",
+						"PRUEBA123"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "eliminarSoli",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://localhost:7080/api/Estudiante/DeleteSolicitud/{{id}}",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7080",
+							"path": [
+								"api",
+								"Estudiante",
+								"DeleteSolicitud",
+								"{{id}}"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Date",
+							"value": "Fri, 03 Mar 2023 05:24:21 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "Kestrel"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						}
+					],
+					"cookie": [],
+					"body": "{\n  \"code\": 200,\n  \"descripcion\": \"Se Elimino la solicitud del estudiante con IDE: PRUEBA123\",\n  \"error\": null,\n  \"data\": null\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "PRUEBA123"
+		}
+	]
+}
