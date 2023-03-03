@@ -14,7 +14,6 @@ builder.Services.AddEntityFrameworkMySQL().AddDbContext<ReinotrebolContext>(opti
     {
         options.UseMySQL(builder.Configuration.GetConnectionString("DefaultConnection"));
     });
-   
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
