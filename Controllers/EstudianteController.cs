@@ -1,13 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using ReinoTrebolK.ClasesModel;
 using ReinoTrebolK.DTO;
 using ReinoTrebolK.Entities;
-using System.Linq;
-using System.Net;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
 
 namespace ReinoTrebolK.Controllers
 {

@@ -1,10 +1,6 @@
-﻿using Microsoft.Extensions.FileSystemGlobbing.Internal;
-using NuGet.Protocol.Plugins;
-using ReinoTrebolK.DTO;
+﻿using ReinoTrebolK.DTO;
 using ReinoTrebolK.Entities;
-using System.Net;
 using System.Text.RegularExpressions;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace ReinoTrebolK.ClasesModel
 {
