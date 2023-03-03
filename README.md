@@ -102,7 +102,7 @@ Para poder ejecutarlo es necesario tener instalado Visual Studio 2022 y MySQL:
 ```
 7. Guardar los cambios.
 8. Para ejecutarlo es necesario dar clic en el icono de triángulo verde.
-![Base de Datos](Imagenes_readme/ejecutarVS.JPG)
+![Base de Datos](Imagenes_readme/ejecurarVS.JPG)
 9. Comenzará a cargar, cuando esté listo para enviar peticiones la pantalla se verá así:
     ![Base de Datos](Imagenes_readme/ejecucionVS.JPG)
     adicional se abrirá el navegador con la Página de Swagger.
@@ -137,17 +137,17 @@ Para las pruebas se pueden realizar de 2 formas, con las aplicaciones Postman o 
 1. Descarga la carpeta que lleva por nombre Pruebas_Postman
 2. Abrir Postman
 3. Dar clic en el botón Import
-
-
-
+![Base de Datos](Imagenes_readme/importPostman.JPG)
 4. Se abrirá una ventana, dar clic en Upload Files.
 5. Se abrirá el explorador de archivos.
 6. Dirigirse a la carpeta que descargaste “Pruebas_Postman”, dentro de ella se tiene un archivo con el nombre de “ReinoTrebol.json”, seleccionar dicho archivo.
 7. En la ventana de Import dar clic en el botón Import.
-
-
+![Base de Datos](Imagenes_readme/importPostman2.JPG)
 8. Listo se creará la colección que contiene los métodos disponibles.
 9. En cada uno al seleccionar ya se tiene precargado un ejemplo del request.
 10. Antes de dar clic en Send/Enviar es necesario validar en nuestra consola de CMD o en nuestro Visual Studio en que puerto se está ejecutando la API.
-11. Si el puerto es diferente al que se tiene configurado en el Postman solo es necesario cambiarlo en cada uno de los métodos.
-12. Listo, una vez modificado el puerto
+![Base de Datos](Imagenes_readme/puertosPostman.JPG)
+11. Si el puerto es diferente al que se tiene configurado en el Postman solo es necesario cambiarlo en cada uno de los métodos por el 5001.
+![Base de Datos](Imagenes_readme/puertosPostman2.JPG)
+12. Listo, una vez modificado el puerto ya se puede ejecutar el metodo.
+13. ![Base de Datos](Imagenes_readme/postmanEjemplo.JPG)
