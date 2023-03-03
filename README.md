@@ -5,20 +5,20 @@ WEB API desarrollado en C# .net core 6 y MySQL, sistema que automatiza el proces
 
 ## Requerimientos
 De acuerdo a la información otorgada por el Rey Mago se realizó la siguiente lista de requerimientos: 
-- Registro de estudiantes.
-- Actualizar información de estudiantes ya registrados.
-- Aprobación/Rechazo de solicitudes de ingreso.
-- Asignación de Grimorios.
-- Rechazo automático de estudiantes, si su información no cumple con las reglas:
-  - Nombre (solo letras, máximo 20 caracteres).
-  - Apellido (solo letras, máximo 20 caracteres).
-  - Identificación (números y letras, máximo 10 caracteres).
-  - Edad (solo números, 2 dígitos).
-  - Afinidad mágica (mencionadas anteriormente).
-- Consultar todas las solicitudes de ingreso..
-- Consultar todas las asignaciones de Grimorios.
-- Eliminar solicitudes de ingreso.
-- Creación de catálogos Magia, Grimorios y Tipo de Trébol.
+1. Registro de estudiantes.
+2. Actualizar información de estudiantes ya registrados.
+3. Aprobación/Rechazo de solicitudes de ingreso.
+4. Asignación de Grimorios.
+5. Rechazo automático de estudiantes, si su información no cumple con las reglas:
+    - Nombre (solo letras, máximo 20 caracteres).
+    - Apellido (solo letras, máximo 20 caracteres).
+    - Identificación (números y letras, máximo 10 caracteres).
+    - Edad (solo números, 2 dígitos).
+    - Afinidad mágica (mencionadas anteriormente).
+6. Consultar todas las solicitudes de ingreso..
+7. Consultar todas las asignaciones de Grimorios.
+8. Eliminar solicitudes de ingreso.
+9. Creación de catálogos Magia, Grimorios y Tipo de Trébol.
 
 ## Herramientas
 * Para el desarrollo, diseño y pruebas de este proyecto se utilizaron las siguientes herramientas:
@@ -31,6 +31,7 @@ De acuerdo a la información otorgada por el Rey Mago se realizó la siguiente l
 
 ## Base de Datos MySQL
 Se diseñó una base de datos No Relacional en MySQL, el diagrama a continuación muestra las tablas y campos de cada una, se tienen lineas de union pero solo muestran el uso lógico que se otorga a nivel programación:
+![Base de Datos](Imagenes_readme/DBD_ReinoMagico.jpg)
 
 
 También se generaron dos SP (Store Procedure) para obtener información y cumplir con los requerimientos 6 y 7:
