@@ -148,7 +148,7 @@ Para estas pruebas se puede ejecutar el API desde CMD o Visual Studio 2022, solo
 9. En cada uno al seleccionar ya se tiene precargado un ejemplo del request.
 10. Antes de dar clic en Send/Enviar es necesario validar en nuestra consola de CMD o en nuestro Visual Studio en que puerto se está ejecutando la API.
 ![Base de Datos](Imagenes_readme/puertosPostman.JPG)
-11. Si el puerto es diferente al que se tiene configurado en el Postman solo es necesario cambiarlo en cada uno de los métodos por el 5001.
+11. Si el puerto es diferente al que se tiene configurado en el Postman solo es necesario cambiarlo en cada uno de los métodos por el puerto activo que se muestra en CMD o Visual Studio.
 ![Base de Datos](Imagenes_readme/puertosPostman2.JPG)
 12. Listo, una vez modificado el puerto ya se puede ejecutar el metodo.
 ![Base de Datos](Imagenes_readme/postmanEjemplo.JPG)
