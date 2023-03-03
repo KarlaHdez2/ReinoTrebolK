@@ -150,4 +150,15 @@ Para las pruebas se pueden realizar de 2 formas, con las aplicaciones Postman o 
 11. Si el puerto es diferente al que se tiene configurado en el Postman solo es necesario cambiarlo en cada uno de los métodos por el 5001.
 ![Base de Datos](Imagenes_readme/puertosPostman2.JPG)
 12. Listo, una vez modificado el puerto ya se puede ejecutar el metodo.
-13. ![Base de Datos](Imagenes_readme/postmanEjemplo.JPG)
+![Base de Datos](Imagenes_readme/postmanEjemplo.JPG)
+
+### Pruebas con Swagger
+Para las pruebas desde Swagger es necesario ejecutar la API desde Visual Studio 2022.
+1. Ir al navegador y abrir la url: https://localhost:7080/swagger/index.html
+2. En esta se vera la pantalla de Swagger que funciona similar al Postman.
+3. Selecciona el método a utilizar.
+4. Dar Clic en el botón ** Try it out **
+5. Esto habilitara el apartado de parametros o request para los metodos PUT y POST, adicional se aparecera el botón Execute.
+6. Dar clic en Botón Execute y esto enviara la peticion al API.
+    ![Base de Datos](Imagenes_readme/swagger1.JPG)
+7. Listo, asi es como se puede ejecutar cada uno de los métodos.
