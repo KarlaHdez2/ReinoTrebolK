@@ -160,5 +160,5 @@ Para las pruebas desde Swagger es necesario ejecutar la API desde Visual Studio 
 4. Dar Clic en el botón ** Try it out **
 5. Esto habilitara el apartado de parametros o request para los metodos PUT y POST, adicional se aparecera el botón Execute.
 6. Dar clic en Botón Execute y esto enviara la peticion al API.
-    ![Base de Datos](Imagenes_readme/postmanEjemplo.JPG)
+    ![Base de Datos](Imagenes_readme/swagger1.JPG)
 7. Listo, asi es como se puede ejecutar cada uno de los métodos.
