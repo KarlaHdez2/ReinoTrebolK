@@ -134,6 +134,7 @@ ReinoTrebolK.exe
 ## Pruebas
 Para las pruebas se pueden realizar de 2 formas, con las aplicaciones Postman o Swagger.
 ### Pruebas con Postman
+Para estas pruebas se puede ejecutar el API desde CMD o Visual Studio 2022, solo es importante identificar el puerto que en donde esta activa la API.
 1. Descarga la carpeta que lleva por nombre Pruebas_Postman
 2. Abrir Postman
 3. Dar clic en el botón Import
