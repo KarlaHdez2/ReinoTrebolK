@@ -75,7 +75,7 @@ A continuación compartiremos los pasos para la instalación de MySQL:
 9. En Workbench iremos a la opción Server > Data Import
 10. Se abrirá una ventana donde seleccionaremos la opción:
         - Import fromSelf_Contained file
-11. En la misma venta del lado derecho dar clic en el botón con 3 puntos (...) y se selecciona el archivo reino_trebol.sql, que se encuentra en la carpeta que descargaste anteriormente Paso 7.
+11. En la misma ventana del lado derecho dar clic en el botón con 3 puntos (...) y se selecciona el archivo reino_trebol.sql, que se encuentra en la carpeta que descargaste anteriormente Paso 8.
 12. En la sección Default Schema to be… dar clic en el botón New… se abrirá una pequeña ventana donde es necesario colocar el nombre reinotrebol.
 13. En la parte de abajo del lado derecho se encuentra un botón Start Import, dar clic para comenzar la importación.
 ![Base de Datos](Imagenes_readme/dataImport.JPG)
