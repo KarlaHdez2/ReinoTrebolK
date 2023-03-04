@@ -75,7 +75,7 @@ A continuación compartiremos los pasos para la instalación de MySQL:
 9. En Workbench iremos a la opción Server > Data Import
 10. Se abrirá una ventana donde seleccionaremos la opción:
         - Import fromSelf_Contained file
-11. En la misma venta del lado derecho dar clic en el botón con 3 puntos (...) y se selecciona el archivo reino_trebol.sql, que se encuentra en la carpeta que descargaste anteriormente Paso 7.
+11. En la misma ventana del lado derecho dar clic en el botón con 3 puntos (...) y se selecciona el archivo reino_trebol.sql, que se encuentra en la carpeta que descargaste anteriormente Paso 8.
 12. En la sección Default Schema to be… dar clic en el botón New… se abrirá una pequeña ventana donde es necesario colocar el nombre reinotrebol.
 13. En la parte de abajo del lado derecho se encuentra un botón Start Import, dar clic para comenzar la importación.
 ![Base de Datos](Imagenes_readme/dataImport.JPG)
@@ -134,6 +134,7 @@ ReinoTrebolK.exe
 ## Pruebas
 Para las pruebas se pueden realizar de 2 formas, con las aplicaciones Postman o Swagger.
 ### Pruebas con Postman
+Para estas pruebas se puede ejecutar el API desde CMD o Visual Studio 2022, solo es importante identificar el puerto que en donde esta activa la API.
 1. Descarga la carpeta que lleva por nombre Pruebas_Postman
 2. Abrir Postman
 3. Dar clic en el botón Import
@@ -147,9 +148,9 @@ Para las pruebas se pueden realizar de 2 formas, con las aplicaciones Postman o 
 9. En cada uno al seleccionar ya se tiene precargado un ejemplo del request.
 10. Antes de dar clic en Send/Enviar es necesario validar en nuestra consola de CMD o en nuestro Visual Studio en que puerto se está ejecutando la API.
 ![Base de Datos](Imagenes_readme/puertosPostman.JPG)
-11. Si el puerto es diferente al que se tiene configurado en el Postman solo es necesario cambiarlo en cada uno de los métodos por el 5001.
+11. Si el puerto es diferente al que se tiene configurado en el Postman solo es necesario cambiarlo en cada uno de los métodos por el puerto activo que se muestra en CMD o Visual Studio.
 ![Base de Datos](Imagenes_readme/puertosPostman2.JPG)
-12. Listo, una vez modificado el puerto ya se puede ejecutar el metodo.
+12. Listo, una vez modificado el puerto ya se puede ejecutar cada uno de los métodos.
 ![Base de Datos](Imagenes_readme/postmanEjemplo.JPG)
 
 ### Pruebas con Swagger
@@ -162,3 +163,6 @@ Para las pruebas desde Swagger es necesario ejecutar la API desde Visual Studio 
 6. Dar clic en Botón Execute y esto enviara la peticion al API.
     ![Base de Datos](Imagenes_readme/swagger1.JPG)
 7. Listo, asi es como se puede ejecutar cada uno de los métodos.
+
+## Agradecimientos
+Gracias Rey Mago por confiar en nuestros conocimientos para desarrollar este proyecto. Esperamos que el proyecto entregado sea de tu agrado y cumpla con lo requerimientos solicitados.
