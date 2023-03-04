@@ -12,5 +12,8 @@ namespace ReinoTrebolK.DTO
         public string? Error { get; set; }
 
         public Grimorio Data { get; set; }
+
+        public List<SolicitudesDTO> DataList { get; set; }
+        public List<AsignacionesG> DataListG { get; set; }
     }
 }

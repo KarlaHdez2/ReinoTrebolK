@@ -33,10 +33,14 @@ namespace ReinoTrebolK.Controllers
         ///</return>
         // GET api/<obtenerSolicitudes>
         [HttpGet("obtenerSolicitudes")]
-        public async Task<ActionResult<List<SolicitudesDTO>>> Get()
+        public async Task<MensajeRespuesta> Get()
         {
             var List = DBContext.Set<SolicitudesDTO>().FromSqlRaw("CALL obtener_solicitudes").ToList<SolicitudesDTO>();
-            return List;
+            if(List.Count == 0)
+            {
+                return MensajeResp.dataSoliVacio(List);
+            }
+            return MensajeResp.dataSoliOK(List);
 
         }
 
@@ -48,10 +52,14 @@ namespace ReinoTrebolK.Controllers
         ///</return>
         // GET api/<obtenerAsignaciones>/
         [HttpGet("obtenerAsignaciones")]
-        public async Task<ActionResult<List<AsignacionesG>>> GetA()
+        public async Task<MensajeRespuesta> GetA()
         {
             var List = DBContext.Set<AsignacionesG>().FromSqlRaw("CALL obtener_asignaciones").ToList<AsignacionesG>();
-            return List;
+            if(List.Count == 0)
+            {
+                return MensajeResp.dataAsigVacio(List);
+            }
+            return MensajeResp.dataAsigOK(List);
 
         }
 

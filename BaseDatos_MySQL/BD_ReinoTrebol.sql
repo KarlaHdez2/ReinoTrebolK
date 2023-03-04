@@ -29,7 +29,7 @@ CREATE TABLE `asignaciongrimorio` (
   `idEstu` varchar(25) DEFAULT NULL,
   `idGrimorio` int DEFAULT NULL,
   PRIMARY KEY (`idAsig`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `asignaciongrimorio` (
 
 LOCK TABLES `asignaciongrimorio` WRITE;
 /*!40000 ALTER TABLE `asignaciongrimorio` DISABLE KEYS */;
-INSERT INTO `asignaciongrimorio` VALUES (1,'123KARLA',3),(2,'123KARLA',1);
+INSERT INTO `asignaciongrimorio` VALUES (1,'123KARLA',4);
 /*!40000 ALTER TABLE `asignaciongrimorio` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -80,7 +80,7 @@ CREATE TABLE `estudiante` (
   `edad` int DEFAULT NULL,
   `ide` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idEstu`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -89,7 +89,7 @@ CREATE TABLE `estudiante` (
 
 LOCK TABLES `estudiante` WRITE;
 /*!40000 ALTER TABLE `estudiante` DISABLE KEYS */;
-INSERT INTO `estudiante` VALUES (1,'Karlis','Hernandez',25,'123KARLA'),(2,'Prueba','PruebaApellido',32,'PRUEBA123'),(3,'Prueba2','PruebaApellido',32,'PRUEBA1234');
+INSERT INTO `estudiante` VALUES (1,'Karlita','Hernandez',27,'123KARLA');
 /*!40000 ALTER TABLE `estudiante` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -129,7 +129,7 @@ CREATE TABLE `magia` (
   `idMagia` int NOT NULL AUTO_INCREMENT,
   `descripcion` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idMagia`)
-) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=93 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -138,7 +138,7 @@ CREATE TABLE `magia` (
 
 LOCK TABLES `magia` WRITE;
 /*!40000 ALTER TABLE `magia` DISABLE KEYS */;
-INSERT INTO `magia` VALUES (1,'Oscuridad'),(2,'Luz'),(3,'Fuego'),(4,'Agua'),(5,'Viento'),(6,'Tierra'),(7,'No magia'),(8,'Magia de Acero'),(9,'Magia de Agua'),(10,'Magia de Aire'),(11,'Magia de Alas'),(12,'Magia de Algodón'),(13,'Magia de Almagre'),(14,'Anti-Magia'),(15,'Magia de Arena'),(16,'Magia de Arenisca'),(17,'Magia de Barro'),(18,'Magia de Bestia'),(19,'Magia de Bestia Demoníaca'),(20,'Magia de Bronce'),(21,'Magia de Brújula'),(22,'Magia de Burbujas'),(23,'Magia de Cadenas'),(24,'Magia de Cabello'),(25,'Magia de Canto'),(26,'Magia de Cenizas'),(27,'Magia de Cerezos'),(28,'Magia de Cobre'),(29,'Magia de Comida'),(30,'Magia Compuesta'),(31,'Magia de Comunicación'),(32,'Magia de Corindón'),(33,'Magia de Corte'),(34,'Magia de Creación'),(35,'Magia de Cristal'),(36,'Magia de Cuerpo'),(37,'Magia Curativa'),(38,'Magia de Dados'),(39,'Magia de Danza'),(40,'Magia Debilitante'),(41,'Magia de Espacio'),(42,'Magia de Espadas'),(43,'Magia de Espectros'),(44,'Magia de Espejo'),(45,'Magia de Espinas'),(46,'Magia Espiritual'),(47,'Magia de Fuego'),(48,'Magia de Gel'),(49,'Magia de Gravedad'),(50,'Magia de Hielo'),(51,'Magia de Hilos'),(52,'Magia de Hongos'),(53,'Magia de Huesos'),(54,'Magia de Humo'),(55,'Magia de Ilusión'),(56,'Magia de Imitación'),(57,'Magia de Juego'),(58,'Magia Kotodama'),(59,'Magia del Árbol del Mundo'),(60,'Magia de Luz'),(61,'Magia de Maleficio'),(62,'Magia de Plantas Venenosas'),(63,'Magia de Maldición'),(64,'Método de Maná'),(65,'Magia de Memoria'),(66,'Magia de Mercurio'),(67,'Magia de Mosquito'),(68,'Magia de Mucosidad'),(69,'Magia de Niebla'),(70,'Magia de Nieve'),(71,'Magia de Ojos'),(72,'Magia de Oscuridad'),(73,'Magia de Piedra'),(74,'Magia de Pintura'),(75,'Magia de Plantas'),(76,'Magia de Plumas'),(77,'Magia prohibida'),(78,'Magia de Rayo'),(79,'Magia de Recombinación'),(80,'Magia de Reencarnación'),(81,'Magia Reforzante'),(82,'Magia de Restricción'),(83,'Magia de Roca'),(84,'Magia de Sangre'),(85,'Magia de Sellado'),(86,'Magia de Shakudo'),(87,'Magia de Sombra'),(88,'Magia de Sueños'),(89,'Magia de Tiempo'),(90,'Magia de Tierra'),(91,'Trampa Mágica'),(92,'Magia de Transformación'),(93,'Magia de Transparencia'),(94,'Magia de Veneno'),(95,'Magia de Vidrio'),(96,'Magia de Viento'),(97,'Magia de Vídes'),(98,'Magia de Vórtice'),(99,'Magia de Árboles');
+INSERT INTO `magia` VALUES (1,'Magia de Acero'),(2,'Magia de Agua'),(3,'Magia de Aire'),(4,'Magia de Alas'),(5,'Magia de Algodón'),(6,'Magia de Almagre'),(7,'Anti-Magia'),(8,'Magia de Arena'),(9,'Magia de Arenisca'),(10,'Magia de Barro'),(11,'Magia de Bestia'),(12,'Magia de Bestia Demoníaca'),(13,'Magia de Bronce'),(14,'Magia de Brújula'),(15,'Magia de Burbujas'),(16,'Magia de Cadenas'),(17,'Magia de Cabello'),(18,'Magia de Canto'),(19,'Magia de Cenizas'),(20,'Magia de Cerezos'),(21,'Magia de Cobre'),(22,'Magia de Comida'),(23,'Magia Compuesta'),(24,'Magia de Comunicación'),(25,'Magia de Corindón'),(26,'Magia de Corte'),(27,'Magia de Creación'),(28,'Magia de Cristal'),(29,'Magia de Cuerpo'),(30,'Magia Curativa'),(31,'Magia de Dados'),(32,'Magia de Danza'),(33,'Magia Debilitante'),(34,'Magia de Espacio'),(35,'Magia de Espadas'),(36,'Magia de Espectros'),(37,'Magia de Espejo'),(38,'Magia de Espinas'),(39,'Magia Espiritual'),(40,'Magia de Fuego'),(41,'Magia de Gel'),(42,'Magia de Gravedad'),(43,'Magia de Hielo'),(44,'Magia de Hilos'),(45,'Magia de Hongos'),(46,'Magia de Huesos'),(47,'Magia de Humo'),(48,'Magia de Ilusión'),(49,'Magia de Imitación'),(50,'Magia de Juego'),(51,'Magia Kotodama'),(52,'Magia del Árbol del Mundo'),(53,'Magia de Luz'),(54,'Magia de Maleficio'),(55,'Magia de Plantas Venenosas'),(56,'Magia de Maldición'),(57,'Método de Maná'),(58,'Magia de Memoria'),(59,'Magia de Mercurio'),(60,'Magia de Mosquito'),(61,'Magia de Mucosidad'),(62,'Magia de Niebla'),(63,'Magia de Nieve'),(64,'Magia de Ojos'),(65,'Magia de Oscuridad'),(66,'Magia de Piedra'),(67,'Magia de Pintura'),(68,'Magia de Plantas'),(69,'Magia de Plumas'),(70,'Magia prohibida'),(71,'Magia de Rayo'),(72,'Magia de Recombinación'),(73,'Magia de Reencarnación'),(74,'Magia Reforzante'),(75,'Magia de Restricción'),(76,'Magia de Roca'),(77,'Magia de Sangre'),(78,'Magia de Sellado'),(79,'Magia de Shakudo'),(80,'Magia de Sombra'),(81,'Magia de Sueños'),(82,'Magia de Tiempo'),(83,'Magia de Tierra'),(84,'Trampa Mágica'),(85,'Magia de Transformación'),(86,'Magia de Transparencia'),(87,'Magia de Veneno'),(88,'Magia de Vidrio'),(89,'Magia de Viento'),(90,'Magia de Vídes'),(91,'Magia de Vórtice'),(92,'Magia de Árboles');
 /*!40000 ALTER TABLE `magia` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -179,7 +179,7 @@ CREATE TABLE `solicitud` (
   `idMagia` int DEFAULT NULL,
   `estatus` int DEFAULT NULL,
   PRIMARY KEY (`idSoli`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -188,7 +188,6 @@ CREATE TABLE `solicitud` (
 
 LOCK TABLES `solicitud` WRITE;
 /*!40000 ALTER TABLE `solicitud` DISABLE KEYS */;
-INSERT INTO `solicitud` VALUES (3,'123KARLA',1,3),(5,'123KARLA',5,3),(7,'PRUEBA123',4,3),(8,'PRUEBA1234',4,2);
 /*!40000 ALTER TABLE `solicitud` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -254,4 +253,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-03-03  1:58:17
+-- Dump completed on 2023-03-03 18:23:06

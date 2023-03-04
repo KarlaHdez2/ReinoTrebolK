@@ -13,6 +13,90 @@ namespace ReinoTrebolK.ClasesModel
     public class MensajesRespuesta
     {
         ///<summary>
+        ///Arma el mensaje de salida cuando se tienen solicitudes en BD.
+        ///</summary>
+        ///<return>
+        ///Devuelve un objeto tipo Mensaje Respuesta, que contiene elementos como; Codigo HTTP, Descripcion y el DataList que contiene los registro de solicitudes.
+        ///</return>
+        ///<param name="data">
+        ///Lista con las solicitudes en BD
+        ///</param>
+        public MensajeRespuesta dataSoliOK(List<SolicitudesDTO> data)
+        {
+            var mensaje = new MensajeRespuesta()
+            {
+                Code = HttpStatusCode.OK,
+                Descripcion = "Se tiene "+data.Count.ToString()+" solicitudes",
+                DataList = data
+            };
+            return mensaje;
+
+        }
+
+        ///<summary>
+        ///Arma el mensaje de salida de la lista de solicitudes
+        ///</summary>
+        ///<return>
+        ///Devuelve un objeto tipo Mensaje Respuesta, que contiene elementos como; Codigo HTTP, Descripcion y el Data vacio.
+        ///</return>
+        ///<param name="data">
+        ///Lista del reporte vacio
+        ///</param>
+        public MensajeRespuesta dataSoliVacio(List<SolicitudesDTO> data)
+        {
+            var mensaje = new MensajeRespuesta()
+            {
+                Code = HttpStatusCode.OK,
+                Descripcion = "No hay solicitudes",
+                DataList = data
+            };
+            return mensaje;
+
+        }
+
+        ///<summary>
+        ///Arma el mensaje de salida cuando se tienen asignaciones en BD.
+        ///</summary>
+        ///<return>
+        ///Devuelve un objeto tipo Mensaje Respuesta, que contiene elementos como; Codigo HTTP, Descripcion y el DataList que contiene los registro de asignaciones.
+        ///</return>
+        ///<param name="data">
+        ///Lista con las asignaciones en BD
+        ///</param>
+        public MensajeRespuesta dataAsigOK(List<AsignacionesG> data)
+        {
+            var mensaje = new MensajeRespuesta()
+            {
+                Code = HttpStatusCode.OK,
+                Descripcion = "Se tiene " + data.Count.ToString() + " solicitudes",
+                DataListG = data
+            };
+            return mensaje;
+
+        }
+
+        ///<summary>
+        ///Arma el mensaje de salida de la lista de asignaciones
+        ///</summary>
+        ///<return>
+        ///Devuelve un objeto tipo Mensaje Respuesta, que contiene elementos como; Codigo HTTP, Descripcion y el Data vacio.
+        ///</return>
+        ///<param name="data">
+        ///Lista de asignaciones vacio
+        ///</param>
+        public MensajeRespuesta dataAsigVacio(List<AsignacionesG> data)
+        {
+            var mensaje = new MensajeRespuesta()
+            {
+                Code = HttpStatusCode.OK,
+                Descripcion = "No hay solicitudes",
+                DataListG = data
+            };
+            return mensaje;
+
+        }
+
+        ///<summary>
         ///Arma el mensaje de salida en caso de que el estudiante ya exista.
         ///</summary>
         ///<return>
